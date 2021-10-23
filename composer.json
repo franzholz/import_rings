@@ -1,0 +1,37 @@
+{
+  "name": "jambagecom/import-rings",
+  "type": "typo3-cms-extension",
+  "description": "Import of wedding ring files into tt_products tables",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "import"
+  ],
+  "support": {
+    "issues": "https://github.com/franzholz/import/issues"
+  },
+  "homepage": "https://jambage.com",
+  "authors": [
+    {
+      "name": "Franz Holzinger",
+      "role": "Developer",
+      "homepage": "https://ttproducts.de"
+    }
+  ],
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "require": {
+    "typo3/cms-core": "^7.6 || ^8.7",
+    "jambagecom/import": "^0.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "JambageCom\\ImportRings\\": "Classes"
+    }
+  },
+  "replace": {
+    "jambagecom/import-rings": "self.version",
+    "typo3-ter/import-rings": "self.version"
+  }
+}
